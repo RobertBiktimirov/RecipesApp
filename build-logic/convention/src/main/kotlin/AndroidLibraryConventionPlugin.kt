@@ -3,6 +3,7 @@ import dev.example.recipesapp.buildLogic.configureKotlinAndroid
 import dev.example.recipesapp.buildLogic.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 
@@ -16,6 +17,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 apply("org.jetbrains.kotlin.plugin.serialization")
                 apply("kotlinx-serialization")
                 apply("kotlin-parcelize")
+                apply("org.jetbrains.kotlin.plugin.compose")
             }
 
             extensions.configure<LibraryExtension> {
