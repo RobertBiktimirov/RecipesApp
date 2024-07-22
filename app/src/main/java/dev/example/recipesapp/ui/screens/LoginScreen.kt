@@ -140,7 +140,8 @@ fun LoginText(modifier: Modifier) {
             text = "Help your path to health goals with happiness",
             color = MaterialTheme.colorScheme.background,
             fontWeight = FontWeight.W500,
-            fontSize = 28.sp
+            fontSize = 28.sp,
+            lineHeight = 36.sp
         )
     }
 }
@@ -177,7 +178,7 @@ fun CreateNewAccountButton(modifier: Modifier) {
             .fillMaxWidth()
     ) {
         Text(
-            text = "CreateNewAccount",
+            text = "Create New Account",
             textAlign = TextAlign.Center,
             color = MaterialTheme.colorScheme.background
         )
